@@ -1,28 +1,10 @@
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import surfSoccerDev from "../../images/surfSoccerDev.png";
 import { FiArrowDownCircle, FiEye, FiMapPin } from "react-icons/fi";
-import HireMeModal from "../HireMeModal";
-import surfingDeveloper from "../../images/surfingDeveloper.png";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import Button from "../reusable/Button";
 const AppBanner = () => {
-  const [showModal, setShowModal] = useState(false);
   const [activeTheme, setTheme] = useThemeSwitcher();
-  const [showResume, setShowResume] = useState(false);
-  function showHireMeModal() {
-    if (!showModal) {
-      document
-        .getElementsByTagName("html")[0]
-        .classList.add("overflow-y-hidden");
-      setShowModal(true);
-    } else {
-      document
-        .getElementsByTagName("html")[0]
-        .classList.remove("overflow-y-hidden");
-      setShowModal(false);
-    }
-  }
+
   return (
     <motion.section
       initial={{ opacity: 0 }}

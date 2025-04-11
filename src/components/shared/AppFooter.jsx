@@ -1,9 +1,6 @@
 import {
   FiGithub,
-  FiTwitter,
   FiLinkedin,
-  FiGlobe,
-  FiYoutube,
 } from "react-icons/fi";
 import ContactDetails from "../contact/ContactDetails";
 

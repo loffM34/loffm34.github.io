@@ -2,11 +2,9 @@ import { useState } from "react";
 import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
-import HireMeModal from "../HireMeModal";
 import logoLight from "../../images/logo-light.png";
 import logoDark from "../../images/logo-dark.png";
 import { motion } from "framer-motion";
-import Button from "../reusable/Button";
 import { useNavigate } from "react-router-dom";
 
 const AppHeader = () => {
@@ -26,20 +24,6 @@ const AppHeader = () => {
       setShowMenu(true);
     } else {
       setShowMenu(false);
-    }
-  }
-
-  function showHireMeModal() {
-    if (!showModal) {
-      document
-        .getElementsByTagName("html")[0]
-        .classList.add("overflow-y-hidden");
-      setShowModal(true);
-    } else {
-      document
-        .getElementsByTagName("html")[0]
-        .classList.remove("overflow-y-hidden");
-      setShowModal(false);
     }
   }
 
@@ -197,14 +181,6 @@ const AppHeader = () => {
             <FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
           )}
         </div>
-      </div>
-
-      {/* Hire me modal */}
-      <div>
-        {showModal ? (
-          <HireMeModal onClose={showHireMeModal} onRequest={showHireMeModal} />
-        ) : null}
-        {showModal ? showHireMeModal : null}
       </div>
     </motion.nav>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 
 const CounterItem = ({ title, counter, measurement }) => {
   return (

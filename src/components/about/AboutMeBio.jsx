@@ -1,11 +1,5 @@
-import profileImage from "../../images/profile.jpg";
-import { useContext } from "react";
-import AboutMeContext from "../../context/AboutMeContext";
-import NoteBoard from "./NoteBoard";
 import ProfileCard from "./ProfileCard";
 const AboutMeBio = () => {
-  const { aboutMe } = useContext(AboutMeContext);
-
   return (
     <div
       className="justify-center block sm:flex sm:gap-10 mt-10 sm:mt-20 overflow-visible"
@@ -13,7 +7,6 @@ const AboutMeBio = () => {
       style={{ marginTop: "200px", marginBottom: "150px" }}
     >
       <ProfileCard></ProfileCard>
-    
     </div>
   );
 };
