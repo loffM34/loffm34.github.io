@@ -15,7 +15,7 @@ const images = [
 const ProfileCard: React.FC = () => {
   return (
     <div
-      className="max-w-2xl p-6 bg rounded-3xl shadow-xl text-center bg-primary-light dark:bg-ternary-dark dark:text-ternary-light overflow-hidden"
+      className="max-w-2xl max-h-xl p-6 bg rounded-3xl shadow-xl text-center bg-primary-light dark:bg-ternary-dark dark:text-ternary-light overflow-hidden"
       style={{ overflow: "hidden" }}
     >
       <h1 className="mb-5 text-4xl font-semibold text-gray-800">About Me</h1>
