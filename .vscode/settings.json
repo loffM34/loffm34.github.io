@@ -1,0 +1,20 @@
+{
+  "cSpell.words": ["compat", "craco", "tailwindcss"],
+
+  // ✅ Disable VS Code's built-in CSS validation (it doesn't understand @tailwind)
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+
+  // ✅ Enable Tailwind IntelliSense in .tsx/.ts files
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript",
+    "html": "html"
+  },
+
+  // ✅ Optional: make Tailwind suggestions pop up in strings
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
