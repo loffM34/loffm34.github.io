@@ -6,6 +6,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
       onChange={(e) => {
         setSelectProject(e.target.value);
       }}
+      id="projectSelect"
       className="font-general-medium 
                 px-4
                 sm:px-6

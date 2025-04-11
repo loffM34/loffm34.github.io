@@ -37,6 +37,7 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({
           WebkitMaskImage:
             "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
         }}
+        
       >
         <div
           className="flex animate-carousel group-hover:paused"
@@ -48,6 +49,7 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({
           {duplicatedImages.map((image, index) => (
             <div
               key={index}
+              id="imageCarousel"
               className="relative"
               style={{
                 flexShrink: 0,

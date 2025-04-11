@@ -28,7 +28,7 @@ const Home = () => {
   }, [hash]);
   return (
     <div className="container mx-auto">
-      <div className="w-full min-h-screen flex justify-center items-center px-4">
+      <div className="w-full min-h-screen flex justify-center items-center mobile px-4">
         <AppBanner></AppBanner>
       </div>
 
@@ -47,7 +47,8 @@ const Home = () => {
         <ProjectsGrid></ProjectsGrid>
       </ProjectsProvider>
 
-      <div className="mt-8 sm:mt-10 flex justify-center">
+      {/* More Projects Button */}
+      {/* <div className="mt-8 sm:mt-10 flex justify-center">
         <Link
           to="/projects"
           className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
@@ -55,7 +56,7 @@ const Home = () => {
         >
           <Button title="More Projects" />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
