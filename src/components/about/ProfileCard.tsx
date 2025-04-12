@@ -4,12 +4,17 @@ import surfPhoto from "../../images/surfPhoto.jpg";
 import soccerPhoto from "../../images/soccerPhoto.jpg";
 import hackNJIT from "../../images/hackNJIT.jpg";
 import hackRU from "../../images/hackRU.jpg";
+import tennisTeam from "../../images/tennisTeam.png";
+import gradAward from "../../images/graduationAward.jpg";
 import InfiniteCarousel from "./SimpleCarousel";
+
 const images = [
   { src: surfPhoto, description: "Surfing" },
   { src: hackNJIT, description: "NJIT Hackathon" },
   { src: soccerPhoto, description: "Monmouth Light FC" },
   { src: hackRU, description: "Rutgers Hackathon" },
+  { src: gradAward, description: "Brookdale Grad/Award" },
+  { src: tennisTeam, description: "Brookdale Tennis" },
 ];
 
 const ProfileCard: React.FC = () => {
@@ -38,7 +43,7 @@ const ProfileCard: React.FC = () => {
       </p>
 
       <p className="mt-4 text-xl text-gray-600">
-        Outside of coding, I’m super into soccer, surfing, and tennis.I also
+        Outside of coding, I’m super into soccer, surfing, and tennis. I also
         enjoy teaching and mentoring: I’ve coached a rec soccer team, taught
         STEM at iCode, and served as President of the Brookdale CS Club. Now,
         I’m part of Stevens Blueprint, where I help build tech for nonprofits.
