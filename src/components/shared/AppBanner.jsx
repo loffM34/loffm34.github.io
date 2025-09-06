@@ -53,7 +53,7 @@ const AppBanner = () => {
         >
           <a
             download="MichaelLoffResume.pdf"
-            href="/files/MichaelLoffResume2.pdf"
+            href="/files/MichaelLoff.pdf"
             className="font-general-medium flex justify-center items-center w-36 sm:w-48 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
             aria-label="Download Resume"
           >
@@ -63,7 +63,7 @@ const AppBanner = () => {
             </p>
           </a>
           <a
-            href="/files/MichaelLoffResume2.pdf"
+            href="/files/MichaelLoff.pdf"
             target="blank"
             className="font-general-medium flex justify-center items-center max-w-sm sm:w-24 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
             aria-label="Download Resume"
