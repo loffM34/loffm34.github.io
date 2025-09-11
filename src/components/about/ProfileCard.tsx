@@ -36,24 +36,25 @@ const ProfileCard: React.FC = () => {
       {/* About Text */}
 
       <p className="mt-4 text-xl text-gray-600">
-        Hey! I’m a third-year Computer Science student at Stevens Institute of
-        Technology with a passion for building meaningful, creative tech
-        especially in software engineering and AI. I love working on projects
-        that challenge me, solve real-world problems, and bring people together.
+        Hey! I’m a senior Computer Science student at Stevens Institute of
+        Technology with a passion for building meaningful, creative tech—
+        especially in software engineering and AI. This past summer, I worked as
+        a Web Application Intern at New Jersey Resources, where I built tools to
+        help modernize internal operations and learned a ton about full-stack
+        development in a real-world setting.
       </p>
 
       <p className="mt-4 text-xl text-gray-600">
-        Outside of coding, I’m super into soccer, surfing, and tennis. I also
-        enjoy teaching and mentoring: I’ve coached a rec soccer team, taught
-        STEM at iCode, and served as President of the Brookdale CS Club. Now,
-        I’m part of Stevens Blueprint, where I help build tech for nonprofits.
+        Outside of coding, I’m big into soccer, surfing, and tennis. I also love
+        teaching and mentoring: I’ve coached a rec soccer team, taught STEM at
+        iCode, and served as President of the Brookdale CS Club.
       </p>
 
       <p className="mt-4 mb-8 text-xl text-gray-600">
-        Lately, I’ve been focused on a few exciting projects, like a surf
-        forecast web app, an alumni directory for my fraternity, and some AI
-        classification tools. I’m always down to collaborate, try something new,
-        and build things that make a difference.
+        Lately, I’ve been focused on projects like a surf forecast web app, an
+        alumni directory for my fraternity, and AI classification tools. I’m
+        always excited to collaborate, experiment with new ideas, and build
+        things that make a positive impact.
       </p>
 
       <InfiniteCarousel images={images} />
