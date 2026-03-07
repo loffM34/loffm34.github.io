@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import AppBanner from "../components/shared/AppBanner";
 import AboutMeBio from "../components/about/AboutMeBio";
 import { AboutMeProvider } from "../context/AboutMeContext";
 import ProjectsGrid from "../components/projects/ProjectsGrid";
@@ -28,20 +27,19 @@ const Home = () => {
   }, [hash]);
   return (
     <div className="container mx-auto">
-      <div className="w-full min-h-screen flex justify-center items-center mobile px-4">
-        <AppBanner></AppBanner>
+      <div className="w-full min-h-screen flex justify-center items-center px-4 pt-12 sm:pt-24">
+        <AboutMeProvider>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
+            exit={{ opacity: 0 }}
+            className="w-full"
+          >
+            <AboutMeBio />
+          </motion.div>
+        </AboutMeProvider>
       </div>
-
-      <AboutMeProvider>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, delay: 1 }}
-          exit={{ opacity: 0 }}
-          className="w-100 mw-100 m-0 p-0"
-        >
-          <AboutMeBio />
-        </motion.div>
-      </AboutMeProvider>
 
       <ProjectsProvider>
         <ProjectsGrid></ProjectsGrid>

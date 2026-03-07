@@ -3,16 +3,33 @@ import MacroVisionLogo from "../images/MacroVisionLogo.png";
 import MoolaLogo from "../images/moolaLogo.png";
 import WaveWatchLogo from "../images/waveWatchLogo.png";
 import ClubCompassLogo from "../images/clubCompassLogo.png";
-import WaveWatchLogoUnderConstruction from "../images/waveWatchUnderConstructionLogo.png";
-import UIImage1 from "../images/ui-project-1.jpg";
-import UIImage2 from "../images/ui-project-2.jpg";
+import FlareLogo from "../images/FlareLogo.jpg";
+import SpartanGamesLogo from "../images/spartanGamesLogo.png";
 
 export const projectsData = [
   {
     id: 1,
+    title: "Club Compass",
+    category: "Full-Stack",
+    img: ClubCompassLogo,
+  },
+  {
+    id: 2,
+    title: "Moola",
+    category: "AI/Machine-Learning",
+    img: MoolaLogo,
+  },
+  {
+    id: 3,
+    title: "MacroVision",
+    category: "AI/Machine-Learning",
+    img: MacroVisionLogo,
+  },
+  {
+    id: 4,
     title: "Wave-Watch",
     category: "Full-Stack",
-    img: WaveWatchLogoUnderConstruction,
+    img: WaveWatchLogo,
     ProjectHeader: {
       title: "Project Management UI - From Context",
       publishDate: "Jul 26, 2021",
@@ -20,33 +37,15 @@ export const projectsData = [
     },
   },
   {
-    id: 2,
-    title: "MacroVision",
+    id: 5,
+    title: "Flare",
     category: "AI/Machine-Learning",
-    img: MacroVisionLogo,
+    img: FlareLogo,
   },
   {
-    id: 3,
-    title: "Moola",
-    category: "AI/Machine-Learning",
-    img: MoolaLogo,
-  },
-  {
-    id: 4,
-    title: "Club Compass",
+    id: 6,
+    title: "Spartan Games",
     category: "Full-Stack",
-    img: ClubCompassLogo,
+    img: SpartanGamesLogo,
   },
-  // {
-  //   id: 5,
-  //   title: "React Social App",
-  //   category: "Mobile Application",
-  //   img: MobileImage1,
-  // },
-  // {
-  //   id: 6,
-  //   title: "Apple Design System",
-  //   category: "Web Application",
-  //   img: WebImage1,
-  // },
 ];

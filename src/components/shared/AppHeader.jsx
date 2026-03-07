@@ -1,16 +1,14 @@
 import { useState } from "react";
-import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import useThemeSwitcher from "../../hooks/useThemeSwitcher";
-import logoLight from "../../images/logo-light.png";
-import logoDark from "../../images/logo-dark.png";
+import MLLogo from "./MLLogo";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
 const AppHeader = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [activeTheme, setTheme] = useThemeSwitcher();
+  useThemeSwitcher();
 
   window.addEventListener("resize", () => {
     const windowWidth = window.innerWidth;
@@ -55,21 +53,7 @@ const AppHeader = () => {
         <div className="flex justify-between items-center px-4 sm:px-0">
           <div id="imageLogo">
             <Link to="/">
-              {activeTheme === "dark" ? (
-                <img
-                  src={logoDark}
-                  className="w-24"
-                  style={{ maxWidth: "70px" }}
-                  alt="Dark Logo"
-                />
-              ) : (
-                <img
-                  src={logoLight}
-                  className="w-24"
-                  style={{ maxWidth: "70px" }}
-                  alt="Dark Logo"
-                />
-              )}
+              <MLLogo />
             </Link>
           </div>
 
@@ -126,29 +110,17 @@ const AppHeader = () => {
           >
             Contact
           </a>
-          {/* Theme switcher small screen */}
-          <div
-            onClick={() => setTheme(activeTheme)}
-            aria-label="Theme Switcher"
-            className="flex sm:hidden ml-0 items-center bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
-          >
-            {activeTheme === "dark" ? (
-              <FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
-            ) : (
-              <FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
-            )}
-          </div>
         </div>
 
         {/* Header links large screen */}
         <div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
-          <a
+          {/* <a
             onClick={() => handleNav("aboutMeSection")}
             className="block text-left text-3xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 cursor-pointer"
             aria-label="About Me"
           >
             About Me
-          </a>
+          </a> */}
           <a
             onClick={() => handleNav("projectsSection")}
             className="block text-left text-3xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 cursor-pointer"
@@ -166,21 +138,8 @@ const AppHeader = () => {
           </a>
         </div>
 
-        {/* Header right section buttons */}
-
-        {/* Theme switcher large screen */}
-        <div
-          onClick={() => setTheme(activeTheme)}
-          aria-label="Theme Switcher"
-          id="themeSwitcher"
-          className=" mobile bg-primary-light dark:bg-ternary-dark p-3  shadow-sm rounded-xl cursor-pointer"
-        >
-          {activeTheme === "dark" ? (
-            <FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
-          ) : (
-            <FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
-          )}
-        </div>
+        {/* Spacer to balance the logo on the left for centered nav links */}
+        <div className="hidden sm:block" style={{ width: "70px" }}></div>
       </div>
     </motion.nav>
   );
