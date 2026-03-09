@@ -38,6 +38,8 @@ const ProjectsGrid = () => {
         <div
           className="
                         flex
+                        flex-col
+                        sm:flex-row
                         justify-between
                         border-b border-primary-light
                         dark:border-secondary-dark
@@ -105,24 +107,24 @@ const ProjectsGrid = () => {
               />
             ))
           : searchProject
-          ? searchProjectsByTitle.map((project) => (
-              <ProjectSingle
-                id={project.id}
-                title={project.title}
-                category={project.category}
-                image={project.img}
-                key={project.id}
-              />
-            ))
-          : projects.map((project) => (
-              <ProjectSingle
-                id={project.id}
-                title={project.title}
-                category={project.category}
-                image={project.img}
-                key={project.id}
-              />
-            ))}
+            ? searchProjectsByTitle.map((project) => (
+                <ProjectSingle
+                  id={project.id}
+                  title={project.title}
+                  category={project.category}
+                  image={project.img}
+                  key={project.id}
+                />
+              ))
+            : projects.map((project) => (
+                <ProjectSingle
+                  id={project.id}
+                  title={project.title}
+                  category={project.category}
+                  image={project.img}
+                  key={project.id}
+                />
+              ))}
       </div>
     </section>
   );

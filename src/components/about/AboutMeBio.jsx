@@ -2,9 +2,8 @@ import ProfileCard from "./ProfileCard";
 const AboutMeBio = () => {
   return (
     <div
-      className="justify-center block sm:flex sm:gap-10 mt-10 sm:mt-20 overflow-visible"
+      className="w-full flex justify-center py-10 sm:py-20"
       id="aboutMeSection"
-      style={{ marginTop: "200px", marginBottom: "150px" }}
     >
       <ProfileCard></ProfileCard>
     </div>
