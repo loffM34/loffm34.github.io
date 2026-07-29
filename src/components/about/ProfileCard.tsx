@@ -159,11 +159,11 @@ const ProfileCard: React.FC = () => {
               marginBottom: "0.75rem",
             }}
           >
-            I love building creative and meaningful technology, especially in{" "}
+            I love building creative and meaningful technology, especially through{" "}
             <span style={{ color: "#5CE1E6", fontWeight: 600 }}>
-              software engineering
+              Fullstack Development
             </span>{" "}
-            and <span style={{ color: "#38B6FF", fontWeight: 600 }}>AI</span>.
+            and <span style={{ color: "#38B6FF", fontWeight: 600 }}>Software Engineering</span>.
           </p>
 
           <p
@@ -174,11 +174,16 @@ const ProfileCard: React.FC = () => {
               marginBottom: "0.75rem",
             }}
           >
-            I've worked as a Web Application Intern at{" "}
+            Most recently I've worked as a Fullstack Developer at{" "}
+            <span style={{ color: "#5CE1E6", fontWeight: 600 }}>
+              KIOXIA
+            </span>{" "}
+            and previosuly as a Web Application Intern at{" "}
             <span style={{ color: "#5CE1E6", fontWeight: 600 }}>
               New Jersey Resources
-            </span>{" "}
-            and spend my time building projects, from{" "}
+            </span>
+            {" "}
+            . In my free time I love building projects, from{" "}
             <span style={{ color: "#38B6FF", fontWeight: 600 }}>AI tools</span>{" "}
             to surf forecasting apps.
           </p>
@@ -198,7 +203,7 @@ const ProfileCard: React.FC = () => {
             <span role="img" aria-label="soccer">
               ⚽
             </span>{" "}
-            playing soccer or{" "}
+            playing soccer, {" "} <br />
             <span role="img" aria-label="tennis">
               🎾
             </span>{" "}
