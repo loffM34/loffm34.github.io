@@ -1,12 +1,12 @@
 {
   "files": {
-    "static/js/0.81015b72.chunk.js": "/static/js/0.81015b72.chunk.js",
-    "static/js/0.81015b72.chunk.js.map": "/static/js/0.81015b72.chunk.js.map",
+    "static/js/0.8eda6d78.chunk.js": "/static/js/0.8eda6d78.chunk.js",
+    "static/js/0.8eda6d78.chunk.js.map": "/static/js/0.8eda6d78.chunk.js.map",
     "main.css": "/static/css/main.76f14884.chunk.css",
     "main.js": "/static/js/main.ceea0c1e.chunk.js",
     "main.js.map": "/static/js/main.ceea0c1e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.63d1e9de.js",
-    "runtime-main.js.map": "/static/js/runtime-main.63d1e9de.js.map",
+    "runtime-main.js": "/static/js/runtime-main.484f7aba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.484f7aba.js.map",
     "static/js/3.b330ec1b.chunk.js": "/static/js/3.b330ec1b.chunk.js",
     "static/js/3.b330ec1b.chunk.js.map": "/static/js/3.b330ec1b.chunk.js.map",
     "static/js/4.343c99a5.chunk.js": "/static/js/4.343c99a5.chunk.js",
@@ -56,7 +56,7 @@
     "static/media/wavewatchAI.efdda8a3.png": "/static/media/wavewatchAI.efdda8a3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.63d1e9de.js",
+    "static/js/runtime-main.484f7aba.js",
     "static/js/3.b330ec1b.chunk.js",
     "static/css/main.76f14884.chunk.css",
     "static/js/main.ceea0c1e.chunk.js"
